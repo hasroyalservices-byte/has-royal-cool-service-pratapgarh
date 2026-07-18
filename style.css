@@ -1,0 +1,279 @@
+/* ==========================================================================
+   H A S Royal Cool Service — Pratapgarh
+   ========================================================================== */
+
+:root {
+  --brand: #00897B;
+  --brand-dark: #00695C;
+  --brand-light: #E0F2F1;
+  --accent: #FF6B35;
+  --ink: #1B1B1B;
+  --gray: #5C5C5C;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+}
+
+a { text-decoration: none; }
+
+/* ---------- Top Contact Bar ---------- */
+.top-bar {
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.85rem;
+}
+.top-bar a { color: #fff; }
+.top-bar a:hover { color: var(--brand-light); }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  padding: 14px 24px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin: 0;
+  line-height: 1.1;
+}
+.brand-tag {
+  font-size: 0.75rem;
+  color: var(--gray);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.nav-call-btn {
+  background: var(--brand);
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+.nav-call-btn:hover { background: var(--brand-dark); transform: translateY(-1px); }
+
+/* ---------- Hero / Book Now ---------- */
+#book-now {
+  background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);
+}
+#book-now .man { max-height: 380px; }
+#book-now .badge-exp {
+  color: var(--accent);
+  font-weight: 700;
+}
+.card.booking-card {
+  background: #fff;
+}
+
+/* ---------- Utility Colors ---------- */
+.center { display: flex; align-items: center !important; justify-content: center !important; }
+.green, .green-s { color: var(--brand) !important; font-weight: 800; }
+.green-s { font-weight: 600; }
+.bg-green { background-color: var(--brand) !important; }
+.bg-l-green { background-color: var(--brand-light); }
+.bg-success { background-color: var(--brand) !important; }
+.bg-dark { background-color: var(--ink) !important; }
+.gray { color: var(--gray); }
+.white { color: #fff !important; }
+
+.section-eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* ---------- Forms ---------- */
+.form-control, .form-select { font-size: 1.05rem; }
+.form-control:focus, .form-select:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(0,137,123,0.15);
+}
+
+/* ---------- Buttons ---------- */
+.btn-success {
+  background-color: var(--brand) !important;
+  border-color: var(--brand-dark) !important;
+}
+.btn-success:hover {
+  background-color: var(--brand-dark) !important;
+  border-color: var(--brand-dark) !important;
+}
+
+/* ---------- Service Cards ---------- */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12) !important;
+}
+.service-card img {
+  height: 160px;
+  object-fit: cover;
+}
+.call-now-btn-float {
+  background-color: var(--brand);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.service-icon { font-size: 1.2rem; margin-right: 4px; }
+
+/* ---------- About ---------- */
+.about-stat {
+  text-align: center;
+  padding: 18px 8px;
+}
+.about-stat .num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+.about-stat .label {
+  font-size: 0.85rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+ul.list-style { display: block; margin: 0; padding: 0; }
+ul.list-style li { list-style: none; text-indent: -15px; margin-left: 25px; margin-bottom: 12px; }
+ul.list-style li i { color: var(--brand); margin-right: 5px; }
+
+/* ---------- Areas We Serve ---------- */
+.area-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1.5px solid var(--brand);
+  color: var(--brand-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 50px;
+  margin: 5px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.area-pill:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* ---------- Why Us ---------- */
+.whyus-icon {
+  height: 60px;
+  width: 60px;
+  border: 1px solid var(--brand);
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Testimonials ---------- */
+#testimonials .owl-carousel { margin: 0; }
+#testimonials .owl-carousel .item { padding: 1rem; }
+#testimonials .item {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  margin: 10px;
+  min-height: 190px;
+}
+#testimonials p { font-style: italic; color: var(--ink); }
+#testimonials h5 { font-size: 0.95rem; margin-top: 10px; }
+
+/* ---------- FAQ ---------- */
+.accordion-button:not(.collapsed) {
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  box-shadow: none;
+}
+.accordion-button:focus { box-shadow: none; border-color: var(--brand); }
+h2.accordion-header button { font-weight: 600; }
+.faq-side {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 320px;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+.faq-side i { font-size: 3rem; margin-bottom: 14px; }
+
+/* ---------- Footer ---------- */
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); }
+.footer-bottom p { font-size: 14px; }
+footer a.text-light:hover { color: var(--brand-light) !important; }
+
+/* ---------- Sticky Mobile Footer ---------- */
+.footer-nav a { color: #FFF; text-decoration: none; display: block; }
+.footer-nav { box-shadow: 0 -1px 5px rgba(0,0,0,0.1); font-size: 0.9rem; }
+.footer-link { color: white; text-decoration: none; font-weight: 600; display: inline-block; }
+.footer-link:hover { opacity: 0.9; }
+.footer-icon { font-size: 1.4rem; margin-bottom: 2px; }
+.footer-action { transition: background 0.3s ease; }
+.call-buy-now { position: fixed; bottom: 0; width: 100%; z-index: 1000; }
+
+/* ---------- WhatsApp Float ---------- */
+.whatsapp-float {
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  bottom: 24px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  z-index: 999;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  animation: pulse 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover { transform: scale(1.1); color: #fff; }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+  70% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .navbar { padding: 12px 16px; }
+  .brand-name { font-size: 1.15rem; }
+}
+
+@media (max-width: 576px) {
+  #book-now .man { max-height: 220px; }
+  .whatsapp-float { bottom: 78px; }
+}
